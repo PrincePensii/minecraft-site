@@ -10,7 +10,7 @@ const translations = {
     hero_text: "Присоединяйся к дружному semi-vanilla Minecraft проекту с полезными модами, красивым спавном, ивентами и удобным лаунчером.",
     btn_download: "Скачать лаунчер",
     btn_howto: "Как играть",
-    hero_note: "Лаунчер скоро будет доступен. Первая версия будет простой и удобной.",
+    hero_note: "Лаунчер уже доступен! Скачай и заходи на сервер.",
 
     features_label: "Особенности",
     features_title: "Чем сервер особенный?",
@@ -46,9 +46,7 @@ const translations = {
     rules_btn: "Discord скоро",
 
     footer_text: "© 2026 Minecraft Project. Не аффилирован с Mojang или Microsoft.",
-    lang_label: "Язык:",
-
-    alert_soon: "Лаунчер скоро будет доступен!"
+    lang_label: "Язык:"
   },
 
   en: {
@@ -62,7 +60,7 @@ const translations = {
     hero_text: "Join a friendly semi-vanilla Minecraft project with useful mods, a beautiful spawn, community events and an easy launcher.",
     btn_download: "Download Launcher",
     btn_howto: "How to Play",
-    hero_note: "Launcher is coming soon. The first version will be simple and easy to use.",
+    hero_note: "The launcher is available! Download it and join the server.",
 
     features_label: "Features",
     features_title: "What makes the server special?",
@@ -98,9 +96,7 @@ const translations = {
     rules_btn: "Discord coming soon",
 
     footer_text: "© 2026 Minecraft Project. Not affiliated with Mojang or Microsoft.",
-    lang_label: "Language:",
-
-    alert_soon: "Launcher is coming soon!"
+    lang_label: "Language:"
   }
 };
 
@@ -128,13 +124,6 @@ document.querySelectorAll(".lang-btn").forEach(function (button) {
   button.addEventListener("click", function () {
     setLanguage(button.getAttribute("data-lang"));
   });
-});
-
-const downloadButton = document.getElementById("downloadButton");
-
-downloadButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  alert(translations[currentLang].alert_soon);
 });
 
 setLanguage(currentLang);
